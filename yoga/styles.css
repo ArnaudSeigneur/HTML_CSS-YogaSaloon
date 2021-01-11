@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Mandali|Raleway&display=swap");
+
+body {
+  max-width: 1060px;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  color: #6e8e9b;
+  font-family: "Mandali", sans-serif;
+}
+
+h2::after {
+  content: "";
+  height: 40px;
+  width: 2px;
+  background-color: #6e8e9b;
+  display: block;
+  margin: 20px 0 20px 3px;
+}
+
+.bouton {
+  background-color: white;
+  color: black !important;
+  padding: 3px 15px;
+  font-size: 13px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+.bouton:hover {
+  background-color: #6e8e9b;
+  color: white !important;
+}
+
+header {
+  background-image: url("img/yoga.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px 20px 80px;
+  color: white;
+  text-align: center;
+}
+header img {
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 50px;
+  font-family: "Mandali", sans-serif;
+}
+
+#concept ul li {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 991px) {
+  #concept ul li:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+}
+#concept ul li img {
+  margin: 30px;
+  padding: 15px;
+  border-radius: 200px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  width: 80px;
+}
+#cours article {
+  display: flex;
+  align-items: center;
+}
+#cours article img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: 75%;
+  margin-right: 30px;
+}
+
+#contact form li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#contact form a.bouton {
+  margin-left: 25px;
+}
+#contact form input:not([type="submit"]) {
+  box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  border: none;
+  width: 300px;
+  padding: 8px 10px;
+}
+#contact form input::placeholder {
+  font-weight: 100;
+}
+#contact form input[type="submit"] {
+  border: none;
+  font-family: "Raleway", sans-serif;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6e8e9b;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  margin: 35px auto 15px;
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  /*tablette*/
+}
+
+@media screen and (max-width: 768px) {
+  /*mobile*/
+  #concept ul li {
+    flex-direction: column;
+    align-items: center;
+  }
+  #concept ul li div {
+    text-align: center;
+  }
+
+  #cours article {
+    align-items: flex-start;
+  }
+}
